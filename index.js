@@ -29,8 +29,13 @@
 //     console.log(name, age)
 // }
 // std("pari", 12)
-function std(name, age, course) {
+// function std(name:string, age:number, course?:string){
+//     let info = course?`${course}`:""
+//     console.log(name, age, info)
+// }
+// std("pari", 12, "b.tech")
+function std(name, age, course = "M.Tech") {
     let info = course ? `${course}` : "";
     console.log(name, age, info);
 }
-std("pari", 12, "b.tech");
+std("pari", 12);
