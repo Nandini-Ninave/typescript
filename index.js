@@ -34,8 +34,12 @@
 //     console.log(name, age, info)
 // }
 // std("pari", 12, "b.tech")
-function std(name, age, course = "M.Tech") {
-    let info = course ? `${course}` : "";
-    console.log(name, age, info);
+// function std(name:string, age:number, course:string = "M.Tech"){
+//     let info = course?`${course}`:""
+//     console.log(name, age, info)
+// }
+// std("pari", 12)
+function add({ a, b }) {
+    return a + b;
 }
-std("pari", 12);
+console.log(add({ a: 2, b: 3 }));
