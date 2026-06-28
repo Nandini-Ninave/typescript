@@ -54,7 +54,19 @@
 // }
 // console.log(add({a:2,b:3}))
 
-function nums(a:number, b:number, ...c:number[]){
-    console.log(a,b,c)
+// function nums(a:number, b:number, ...c:number[]){
+//     console.log(a,b,c)
+// }
+// nums(2,3,4,5)
+
+interface Std {
+    name:string,
+    age:number,
+    course:string
 }
-nums(2,3,4,5)
+let std : Std={
+    name:"pari",
+    age:15,
+    course:"B.Tech"
+}
+console.log(std)
