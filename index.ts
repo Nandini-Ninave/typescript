@@ -49,7 +49,12 @@
 // }
 // std("pari", 12)
 
-function add({a,b}:{a:number, b:number}){
-    return a+b
+// function add({a,b}:{a:number, b:number}){
+//     return a+b
+// }
+// console.log(add({a:2,b:3}))
+
+function nums(a:number, b:number, ...c:number[]){
+    console.log(a,b,c)
 }
-console.log(add({a:2,b:3}))
+nums(2,3,4,5)
