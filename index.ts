@@ -29,5 +29,10 @@
 // console.log(arr)
 
 
-let arr:Array<number|string> = [1,2,3,"hello"]
-console.log(arr)
+// let arr:Array<number|string> = [1,2,3,"hello"]
+// console.log(arr)
+
+function std(name:string, age:number):void{
+    console.log(name, age)
+}
+std("pari", 12)

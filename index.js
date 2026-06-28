@@ -23,5 +23,9 @@
 // console.log(arr)
 // let arr:(number|string)[] = [1,2,3,"hello"]
 // console.log(arr)
-let arr = [1, 2, 3, "hello"];
-console.log(arr);
+// let arr:Array<number|string> = [1,2,3,"hello"]
+// console.log(arr)
+function std(name, age) {
+    console.log(name, age);
+}
+std("pari", 12);
