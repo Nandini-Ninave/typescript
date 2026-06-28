@@ -6,8 +6,18 @@
 // console.log(typeof userName);
 // console.log(userName)
 
-let value: any = "hello"
-value = 1.1
-// value = true
-console.log(typeof value)
-console.log(value)
+// let value: any = "hello"
+// value = 1.1
+// // value = true
+// console.log(typeof value)
+// console.log(value)
+
+let std: {
+    name: string,
+    age: number
+}=
+{
+    name: "Riya",
+    age:9
+}
+console.log(std)
