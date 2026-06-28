@@ -25,7 +25,12 @@
 // console.log(arr)
 // let arr:Array<number|string> = [1,2,3,"hello"]
 // console.log(arr)
-function std(name, age) {
-    console.log(name, age);
+// function std(name:string, age:number):void{
+//     console.log(name, age)
+// }
+// std("pari", 12)
+function std(name, age, course) {
+    let info = course ? `${course}` : "";
+    console.log(name, age, info);
 }
-std("pari", 12);
+std("pari", 12, "b.tech");

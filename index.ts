@@ -32,7 +32,13 @@
 // let arr:Array<number|string> = [1,2,3,"hello"]
 // console.log(arr)
 
-function std(name:string, age:number):void{
-    console.log(name, age)
+// function std(name:string, age:number):void{
+//     console.log(name, age)
+// }
+// std("pari", 12)
+
+function std(name:string, age:number, course?:string){
+    let info = course?`${course}`:""
+    console.log(name, age, info)
 }
-std("pari", 12)
+std("pari", 12, "b.tech")
