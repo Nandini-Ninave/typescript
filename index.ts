@@ -22,5 +22,8 @@
 // }
 // console.log(std)
 
-let arr:number[] = [1,2,3]
+// let arr:number[] = [1,2,3]
+// console.log(arr)
+
+let arr:(number|string)[] = [1,2,3,"hello"]
 console.log(arr)
