@@ -10,8 +10,14 @@
 // // value = true
 // console.log(typeof value)
 // console.log(value)
-let std = {
-    name: "Riya",
-    age: 9
-};
-console.log(std);
+// let std: {
+//     name: string,
+//     age: number
+// }=
+// {
+//     name: "Riya",
+//     age:9
+// }
+// console.log(std)
+let arr = [1, 2, 3];
+console.log(arr);

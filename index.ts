@@ -12,12 +12,15 @@
 // console.log(typeof value)
 // console.log(value)
 
-let std: {
-    name: string,
-    age: number
-}=
-{
-    name: "Riya",
-    age:9
-}
-console.log(std)
+// let std: {
+//     name: string,
+//     age: number
+// }=
+// {
+//     name: "Riya",
+//     age:9
+// }
+// console.log(std)
+
+let arr:number[] = [1,2,3]
+console.log(arr)
