@@ -59,14 +59,73 @@
 // }
 // nums(2,3,4,5)
 
-interface Std {
-    name:string,
-    age:number,
-    course:string
+
+//interface
+// interface Std{
+//     name:string, 
+//     age:number,
+//     course:string
+// }
+// let std:Std={
+//     name:"pari",
+//     age:19,
+//     course:"B.tech"
+// }
+// function userInfo(std:Std):string{
+//     return (`${std.name} - ${std.age} - ${std.course}`)
+// }
+// console.log(userInfo(std))
+
+//type alias for object
+type Point = {
+    x:number,
+    y:number
 }
-let std : Std={
-    name:"pari",
-    age:15,
-    course:"B.Tech"
+type Shape = "circle"|"square"
+function getDim(shape:Shape, point:Point):string{
+    return (`${shape} - ${point.x} - ${point.y}`)
+} 
+console.log(getDim("circle", {x:20, y:90}))
+
+//type alias for union
+type Id = number|string
+let id:Id
+id = "pari"
+console.log(id)
+id = 90
+console.log(id)
+
+//type alias for array
+// type NumArray = string[]
+// function getArr(numArr:NumArray):void{
+//     console.log(numArr)
+// }
+// getArr(["Hello","world"])
+
+//type alias for tuple
+type Arr = [number,string,number,boolean]
+function getArr(arr:Arr):void{
+    console.log(arr)
 }
-console.log(std)
+getArr([1,"hello", 90, true])
+
+//type alias for intersection
+type Emp={
+    name:string
+}
+type Std={
+    id:number
+}
+type Person = Emp & Std
+function getInfo (person:Person):void{
+    console.log(`${person.id} - ${person.name}`)
+}
+getInfo({name:"pari", id:90})
+
+//type alias for function 
+type Add = (a:number,b:number)=>number
+function addfun (addnum:Add, a:number, b:number):void{
+   console.log(addnum(a,b))
+}
+const add:Add = (x:number,y:number)=>x+y
+addfun(add, 5,10)
